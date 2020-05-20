@@ -19,13 +19,19 @@ public class StudentTest {
         this.id = 0;
         this.name = "";
         this.grades = new ArrayList<>();
-        grades.add(100);
     }
 
     @Test
     public void testIfReturnsGrades(){
+        grades.add(100);
+        grades.add(87);
+        grades.add(73);
 
+//        assertEquals(100, grades.get(0));
+        assertTrue(grades.contains(100));
+        assertFalse(grades.contains(27));
     }
+
 
 
 
